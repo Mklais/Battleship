@@ -1,0 +1,71 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  highlight_level: NONE
+  text: |-
+    class Shape {
+        public double area() {
+            return 0;
+        }
+    }
+
+    class Triangle extends Shape {
+        double height;
+        double base;
+
+        // override the method here
+    }
+
+    class Circle extends Shape {
+        double radius;
+
+        // override the method here
+    }
+
+    class Square extends Shape {
+        double side;
+
+        // override the method here
+    }
+
+    class Rectangle extends Shape {
+        double width;
+        double height;
+
+        // override the method here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3823#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:73: error: constructor Triangle in class Triangle cannot be applied to given types;
+            Triangle tr = new Triangle();
+                          ^
+      required: double,double
+      found:    no arguments
+      reason: actual and formal argument lists differ in length
+    Main.java:74: error: constructor Circle in class Circle cannot be applied to given types;
+            Circle ci = new Circle();
+                        ^
+      required: double
+      found:    no arguments
+      reason: actual and formal argument lists differ in length
+    Main.java:75: error: constructor Square in class Square cannot be applied to given types;
+            Square sq = new Square();
+                        ^
+      required: double
+      found:    no arguments
+      reason: actual and formal argument lists differ in length
+    Main.java:76: error: constructor Rectangle in class Rectangle cannot be applied to given types;
+            Rectangle re = new Rectangle();
+                           ^
+      required: double,double
+      found:    no arguments
+      reason: actual and formal argument lists differ in length
+    4 errors
+  time: "Thu, 27 Jul 2023 14:20:12 UTC"
+record: -1
+submission_language: java17
